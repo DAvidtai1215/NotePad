@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NotePad"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="543" Width="853" Background="#FF6AC4B6">
+    <Grid Margin="0,0,0,-5">
+        <Button x:Name="btnOpen" Content="開啟檔案" HorizontalAlignment="Left" Height="42" Margin="31,17,0,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="0.396,0.289" Click="btnOpen_Click"/>
+        <Button x:Name="btnSave" Content="存檔" HorizontalAlignment="Left" Height="42" Margin="139,17,0,0" VerticalAlignment="Top" Width="86" Click="btnSave_Click"/>
+        <RichTextBox x:Name="rtbText" HorizontalAlignment="Center" Height="354" VerticalAlignment="Center" Width="732">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
     </Grid>
 </Window>
